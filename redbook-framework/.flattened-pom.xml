@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>top.chumi</groupId>
+    <artifactId>redbook</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>top.chumi</groupId>
+  <artifactId>redbook-framework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>redbook-framework</name>
+  <description>平台基础设施层：封装一些常用功能，供各个业务线拿来即用</description>
+  <modules>
+    <module>redbook-common</module>
+    <module>redbook-spring-boot-starter-biz-operationlog</module>
+  </modules>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

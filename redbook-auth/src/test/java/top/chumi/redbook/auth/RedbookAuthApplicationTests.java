@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @SpringBootTest
 @Slf4j
-class RedookAuthApplicationTests {
+class RedbookAuthApplicationTests {
     @Resource
     private UserDOMapper userDOMapper;
 
