@@ -1,5 +1,6 @@
 package top.chumi.redbook.auth.controller;
 
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,9 +28,16 @@ public class TestController {
     public Response<User> test2() {
         return Response.success(User.builder().nickName("MingHu").createTime(LocalDateTime.now()).build());
     }
+
     @PostMapping("/test3")
     @ApiOperationLog(description = "测试接口3")
-    public Response<User> test3(@RequestBody User user) {
+    public Response<User> test3(@RequestBody @Validated User user) {
         return Response.success(user);
+    }
+
+    @GetMapping("/test4")
+    @ApiOperationLog(description = "测试接口4")
+    public void test4() {
+        int i = 1 / 0;
     }
 }

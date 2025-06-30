@@ -1,5 +1,6 @@
 package top.chumi.redbook.auth.controller;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,6 +21,7 @@ public class User {
     /**
      * 昵称
      */
+    @NotBlank(message = "用户名不能为空")
     private String nickName;
 
     /**

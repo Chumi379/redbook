@@ -1,5 +1,6 @@
 package top.chumi.redbook.auth.domain.dataobject;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
