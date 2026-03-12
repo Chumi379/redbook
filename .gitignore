@@ -11,6 +11,11 @@ target/
 *.iws
 *.iml
 *.ipr
+**/application-dev.yml
+**/application-prod.yml
+**/application.yml
+**/.flattened-pom.xml
+**/misc.xml
 
 ### Eclipse ###
 .apt_generated
