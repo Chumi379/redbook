@@ -72,6 +72,12 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-redis-jackson</artifactId>
+        </dependency>
+
         <!-- Redis 连接池 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -82,6 +88,9 @@
             <groupId>com.aliyun</groupId>
             <artifactId>dysmsapi20170525</artifactId>
         </dependency>
+
+
+
     </dependencies>
 
 

@@ -20,9 +20,9 @@
 
         <!-- 数据库链接 -->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://13.58.117.104:8888/redbook"
+                        connectionURL="jdbc:mysql://localhost:3307/redbook"
                         userId="root"
-                        password="dsz1314521">
+                        password="123456">
             <!-- 解决多个重名的表生成表结构不一致问题 -->
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
@@ -45,7 +45,25 @@
                              targetProject="src/main/java"/>
 
         <!-- 需要生成的表-实体类 -->
-        <table tableName="t_user" domainObjectName="UserDO"
+        <table tableName="t_role" domainObjectName="RoleDO"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"/>
+        <table tableName="t_permission" domainObjectName="PermissionDO"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"/>
+        <table tableName="t_role_permission_rel" domainObjectName="RolePermissionDO"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"/>
+        <table tableName="t_user_role_rel" domainObjectName="UserRoleRelDO"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"

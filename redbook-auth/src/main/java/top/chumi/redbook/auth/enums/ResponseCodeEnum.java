@@ -17,7 +17,9 @@ public enum ResponseCodeEnum implements BaseExceptionInterface {
     PARAM_NOT_VALID("AUTH-10001","参数不合法"),
 
     //---------业务异常状态码----------
-    VERIFICATION_CODE_SEND_FREQUENTLY("AUTH-20000", "请求太频繁，请3分站后再试");
+    VERIFICATION_CODE_SEND_FREQUENTLY("AUTH-20000", "请求太频繁，请3分站后再试"),
+	VERIFICATION_CODE_ERROR("AUTH-20001", "验证码错误"),
+	;
 
 
     private final String errorCode;
